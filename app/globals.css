@@ -5,3 +5,7 @@
 .outline_btn {
   @apply text-slate-950 font-semibold text-base border-[1px] border-gray-400 px-6 py-[7px] rounded-full lg:text-base lg:px-8 lg:py-2;
 }
+
+.blue_btn {
+  @apply text-slate-950 text-base font-light bg-blue-700 text-white  px-6 py-[7px] rounded-full lg:text-base lg:px-8 lg:py-2;
+}
