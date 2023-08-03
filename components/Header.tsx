@@ -7,7 +7,7 @@ function Header() {
     <div className="flex w-full h-20 lg:h-28 items-center justify-between px-4">
       {/* Right Side  */}
       <div className="flex items-center gap-4">
-        <HiOutlineMenuAlt2 size={30} className="cursor-pointer" />
+        <HiOutlineMenuAlt2 size={30} className="cursor-pointer lg:hidden" />
 
         {/* Website Logo   */}
         <div className="flex items-center gap-1 p-2 cursor-pointer">
@@ -17,10 +17,17 @@ function Header() {
             <span className="font-semibold text-xl">ing</span>
           </div>
         </div>
+        <div className="hidden ml-28  lg:flex lg:gap-10">
+          <p className="font-bold">Home</p>
+          <p>About</p>
+          <p>Blog</p>
+          <p>Property</p>
+        </div>
       </div>
       {/* Left Side  */}
-      <div>
+      <div className="flex gap-6">
         <button className="outline_btn">Register</button>
+        <button className="blue_btn hidden lg:inline">Contact</button>
       </div>
     </div>
   );
