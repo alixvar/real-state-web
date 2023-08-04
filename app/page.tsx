@@ -9,15 +9,17 @@ export default function Home() {
   return (
     <main className="px-4">
       {/* Background Frame  */}
-      <div className="bg-black w-full h-fit p-6  rounded-xl flex flex-col items-center justify-center md:flex-row">
+      <div className="bg-black w-full h-fit p-6  rounded-3xl flex flex-col items-center justify-center md:flex-row">
         {/* Top Section  */}
-        <div className="h-full w-full md:w-3/5 bg-slate-200 rounded-xl p-4 lg:p-8 lg:py-16 flex flex-col items-center lg:items-start gap-8 md:flex-1">
+        <div className="h-full w-full md:w-3/5 bg-slate-200 rounded-3xl p-4 lg:p-8 lg:py-16 flex flex-col items-center lg:items-start gap-8 md:flex-1">
+          {/* open button  */}
+          <div></div>
           {/* Title  */}
           <div className="flex flex-col w-full ">
             <p className="text-3xl lg:text-6xl font-light">Unlock Your Ideal</p>
             <div className="flex gap-2 text-4xl w-full items-center mt-3 justify-center font-bold">
-              <p className="lg:text-5xl">Living</p>
-              <p className="text-blue-700 lg:text-5xl">Space!</p>
+              <p className="lg:text-6xl lg:ml-16">Living</p>
+              <p className="text-blue-700 lg:text-6xl">Space!</p>
             </div>
           </div>
           {/* Description  */}
