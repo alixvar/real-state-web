@@ -1,18 +1,18 @@
 import Image from "next/image";
 
 type CardProps = {
-  src: string;
-  width: number;
-  height: number;
+  src?: string;
+  width?: number;
+  height?: number;
   alt?: string;
-  title: string;
-  desc: string;
+  title?: string;
+  desc?: string;
 };
 
 function CarouselCard({ src, width, height, alt, desc, title }: CardProps) {
   return (
     <div>
-      <Image src={src} width={width} height={height} alt={alt || ""} />
+      {/* <Image src={src} width={width} height={height} alt={alt || ""} /> */}
       <div className="bg-white p-2 flex gap-2">
         <div>
           <p className="font-semibold">{title}</p>
