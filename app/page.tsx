@@ -3,7 +3,7 @@ import building from "@/assets/building.svg";
 import AboutUs from "@/components/AboutUs";
 import SearchBox from "@/components/SearchBox";
 import Featured from "@/components/Featured";
-
+import { FiArrowUpRight } from "react-icons/fi";
 /* eslint-disable react/no-unescaped-entities */
 export default function Home() {
   return (
@@ -13,7 +13,9 @@ export default function Home() {
         {/* Top Section  */}
         <div className="h-full w-full md:w-3/5 bg-slate-200 rounded-3xl p-4 lg:p-8 lg:py-16 flex flex-col items-center lg:items-start gap-8 md:flex-1">
           {/* open button  */}
-          <div></div>
+          <div className="hidden lg:flex items-center justify-center p-2 rounded-full bg-black text-white">
+            <FiArrowUpRight size={30} />
+          </div>
           {/* Title  */}
           <div className="flex flex-col w-full ">
             <p className="text-3xl lg:text-6xl font-light">Unlock Your Ideal</p>
