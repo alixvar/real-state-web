@@ -1,7 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
-import { FiSearch } from "react-icons/fi";
-import { GrLocation } from "react-icons/gr";
+import { FiSearch, FiHome } from "react-icons/fi";
+import { BsCash } from "react-icons/bs";
+import { IoLocationOutline } from "react-icons/io5";
 
 function SearchBox() {
   return (
@@ -37,16 +38,28 @@ function SearchBox() {
           </p>
         </div>
         {/* Search input  */}
-        <div className="flex items-center gap-2 justify-between ">
-          <div className="flex items-center  px-3 bg-slate-200 rounded-lg">
-            <GrLocation
-              size={18}
-              color={"rgb(29 78 216)"}
-              className="text-slate-500"
-            />
+        <div className="flex items-center gap-4 justify-between ">
+          <div className="flex items-center  px-3 bg-customSlate rounded-lg">
+            <IoLocationOutline size={25} color={"rgb(29 78 216)"} />
             <input
               type="text"
-              className="bg-slate-200 p-2 w-full focus:outline-none"
+              className="bg-customSlate p-2 py-3 w-full focus:outline-none placeholder:text-lg"
+              placeholder="Loacation"
+            />
+          </div>
+          <div className="flex items-center  px-3 bg-customSlate rounded-lg">
+            <FiHome size={25} color={"rgb(29 78 216)"} />
+            <input
+              type="text"
+              className="bg-customSlate p-2 py-3 w-full focus:outline-none placeholder:text-lg"
+              placeholder="Loacation"
+            />
+          </div>
+          <div className="flex items-center  px-3 bg-customSlate rounded-lg">
+            <BsCash size={25} color={"rgb(29 78 216)"} />
+            <input
+              type="text"
+              className="bg-customSlate p-2 py-3 w-full focus:outline-none placeholder:text-lg"
               placeholder="Loacation"
             />
           </div>

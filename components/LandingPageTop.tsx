@@ -13,7 +13,7 @@ function LandingPageTop() {
         {/* Right Section  */}
         <div className="flex flex-col md:w-3/5 gap-6 h-full w-full ">
           {/* Large Screen Top Section  */}
-          <div className="relative h-full w-full bg-slate-200 rounded-3xl p-4 lg:p-8 lg:py-16 flex flex-col items-center lg:items-start gap-8 md:flex-1">
+          <div className="relative h-full w-full bg-customSlate rounded-3xl p-4 lg:p-8 lg:py-16 flex flex-col items-center lg:items-start gap-8 md:flex-1">
             {/* open button  */}
             <div className="hidden absolute top-4 right-4 md:flex items-center justify-center p-2.5 rounded-full bg-black text-white">
               <FiArrowUpRight size={30} />
@@ -45,7 +45,7 @@ function LandingPageTop() {
           {/* Large Screen Bottom Content  */}
           <div className="hidden md:flex items-center justify-center gap-4 w-full h-full">
             <div className="hidden md:flex bg-blue-700 rounded-full w-20 h-60"></div>
-            <div className="bg-slate-200 w-full p-6 rounded-3xl h-60 flex justify-between flex-col">
+            <div className="bg-customSlate w-full p-6 rounded-3xl h-60 flex justify-between flex-col">
               {/* Description  */}
               <div className="max-w-xs text-justify mt-4">
                 <p>

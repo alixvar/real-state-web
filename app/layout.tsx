@@ -2,9 +2,11 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 
-const inter = Inter({ subsets: ["latin"] });
+const clashDisplay = localFont({
+  src: "../public/fonts/ClashDisplay-Regular.ttf",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-slate-200`}>
+      <body className={`${clashDisplay.className} bg-bgColor`}>
         <Header />
         {children}
         <Footer />
