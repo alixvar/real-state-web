@@ -11,11 +11,11 @@ function LandingPageTop() {
       {/* Background Frame  */}
       <div className="bg-black w-full  p-6  rounded-3xl flex flex-col items-center justify-center md:flex-row gap-5">
         {/* Right Section  */}
-        <div className="flex flex-col w-3/5 gap-6 h-full ">
+        <div className="flex flex-col md:w-3/5 gap-6 h-full w-full ">
           {/* Large Screen Top Section  */}
           <div className="relative h-full w-full bg-slate-200 rounded-3xl p-4 lg:p-8 lg:py-16 flex flex-col items-center lg:items-start gap-8 md:flex-1">
             {/* open button  */}
-            <div className="hidden absolute top-4 right-4 lg:flex items-center justify-center p-2.5 rounded-full bg-black text-white">
+            <div className="hidden absolute top-4 right-4 md:flex items-center justify-center p-2.5 rounded-full bg-black text-white">
               <FiArrowUpRight size={30} />
             </div>
             {/* Title  */}
@@ -43,7 +43,7 @@ function LandingPageTop() {
             </div>
           </div>
           {/* Large Screen Bottom Content  */}
-          <div className="hidden lg:flex items-center justify-center gap-4 w-full h-full">
+          <div className="hidden md:flex items-center justify-center gap-4 w-full h-full">
             <div className="hidden md:flex bg-blue-700 rounded-full w-20 h-60"></div>
             <div className="bg-slate-200 w-full p-6 rounded-3xl h-60 flex justify-between flex-col">
               {/* Description  */}
@@ -62,11 +62,11 @@ function LandingPageTop() {
           </div>
         </div>
         {/* Bridge Content  */}
-        <div className="flex items-center h-4 w-full bg-slate-200 md:hidden">
+        {/* <div className="flex items-center h-4 w-full bg-slate-200 md:hidden">
           <div className="h-full bg-black w-[60%] rounded-r-full" />
           <div className="h-full w-[10%]" />
           <div className="h-full bg-black w-[30%] rounded-l-full" />
-        </div>
+        </div> */}
         {/* Bottom Section  */}
         <div className="w-full h-full relative flex items-center justify-center rounded-xl md:w-2/5 ">
           <Image

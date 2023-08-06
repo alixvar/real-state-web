@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="bg-black w-full p-10 flex gap-32 pb-16 mt-16">
+    <div className="bg-black w-full p-10 flex flex-col lg:flex-row lg:gap-32 gap-16 lg:pb-16 mt-16">
       <div className="text-white text-3xl font-semibold">
         <p>
           Unlock <br />
@@ -11,7 +11,7 @@ function Footer() {
           <span className="text-blue-700">Space!</span>
         </p>
       </div>
-      <div className="grid grid-cols-4 text-slate-300 flex-1">
+      <div className="grid lg:grid-cols-4 grid-cols-2 text-slate-300 flex-1 gap-5">
         <div className="flex flex-col gap-2">
           <h1 className="text-2xl font-semibold text-white mb-3">Navigation</h1>
           <p>About Us</p>
