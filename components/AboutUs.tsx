@@ -1,6 +1,6 @@
 function AboutUs() {
   return (
-    <div className="mt-16 px-8 w-full flex items-start justify-between">
+    <div className="mt-16 px-16 w-full flex items-start justify-between">
       <p className="font-semibold text-4xl">About Us</p>
       <p className="text-slate-500 max-w-3xl text-xl">
         At <span className="text-blue-700 font-semibold">LIVING</span>,we are

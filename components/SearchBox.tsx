@@ -3,37 +3,52 @@ import Image from "next/image";
 import { FiSearch, FiHome } from "react-icons/fi";
 import { BsCash } from "react-icons/bs";
 import { IoLocationOutline } from "react-icons/io5";
+import LongBuild from "@/assets/longbuild.svg";
 
 function SearchBox() {
   return (
     <section className="relative flex flex-col items-center justify-center my-16">
-      <div className="h-52 pb-8 bg-black w-full p-2 text-white rounded-xl flex items-center px-4">
-        {/* Bulding Image  */}
-        <div className="w-[45%]">
-          {/* <Image src={""} width={100} height={100} alt="" /> */}
-        </div>
-        {/* User and Units Info  */}
-        <div className="bg-white rounded-xl flex items-center justify-between w-[55%] px-3 py-2 h-fit">
-          <div className="text-center">
-            <p className="text-blue-700 font-semibold">8K+</p>
-            <p className="text-slate-500 text-xs">Units Sold</p>
+      <div className="bg-black w-full pt-40 px-4 pb-48  text-white rounded-xl flex items-center justify-center ">
+        <div className="absolute left-36 -top-32 flex gap-10 items-center">
+          {/* Bulding Image  */}
+          <div className="relative max-w-sm">
+            <Image
+              src={LongBuild}
+              width={350}
+              height={850}
+              alt=""
+              className="w-full h-full"
+            />
           </div>
-          <div className="text-center">
-            <p className="text-blue-700 font-semibold">12K+</p>
-            <p className="text-slate-500 text-xs">Units Ready</p>
-          </div>
-          <div className="text-center">
-            <p className="text-blue-700 font-semibold">9K+</p>
-            <p className="text-slate-500 text-xs">Customers</p>
+          {/* User and Units Info  */}
+          <div className="bg-customSlate/30 rounded-3xl flex items-center px-20 py-8 h-fit gap-10 ml-10 mt-20">
+            <div className="text-center">
+              <p className="text-white font-semibold text-4xl">
+                8K<span className="text-sky-600">+</span>
+              </p>
+              <p className="text-gray-300">Units Sold</p>
+            </div>
+            <div className="text-center">
+              <p className="text-white font-semibold  text-4xl">
+                12K<span className="text-sky-600">+</span>
+              </p>
+              <p className="text-gray-300">Units Ready</p>
+            </div>
+            <div className="text-center">
+              <p className="text-white font-semibold  text-4xl">
+                9K<span className="text-sky-600">+</span>
+              </p>
+              <p className="text-gray-300">Customers</p>
+            </div>
           </div>
         </div>
       </div>
       {/* Search Bar  */}
-      <div className="bg-white p-4 rounded-xl flex flex-col gap-4 w-[80%]  absolute -bottom-20 ">
+      <div className="bg-white px-16  shadow-lg py-10 rounded-xl flex flex-col gap-4 w-[80%]  absolute -bottom-32 ">
         {/* Title  */}
-        <div className="flex gap-2">
-          <FiSearch size={20} className="text-slate-500" />
-          <p className="text-slate-500 text-sm">
+        <div className="flex gap-2 items-center">
+          <FiSearch size={22} className="text-slate-500" />
+          <p className="text-slate-500 text-2xl">
             Let's find your ideal house...
           </p>
         </div>
