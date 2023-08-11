@@ -20,16 +20,14 @@ function LandingPageTop() {
             </div>
             {/* Title  */}
             <div className="flex flex-col w-full ">
-              <p className="text-3xl lg:text-6xl font-light">
-                Unlock Your Ideal
-              </p>
+              <p className="text-3xl lg:text-6xl">Unlock Your Ideal</p>
               <div className="flex gap-2 text-4xl w-full items-center mt-3 justify-center font-bold">
                 <p className="lg:text-6xl lg:ml-16">Living</p>
                 <p className="text-blue-700 lg:text-6xl">Space!</p>
               </div>
             </div>
             {/* Description  */}
-            <p className="text-base text-slate-400 max-w-xs">
+            <p className="text-base text-slate-400 max-w-sm">
               Whether you're looking to buy,sell,or rent,we are here to assist
               you every step of the wey.
             </p>

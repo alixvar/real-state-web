@@ -5,7 +5,24 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 
 const clashDisplay = localFont({
-  src: "../public/fonts/ClashDisplay-Regular.ttf",
+  src: [
+    {
+      path: "../public/fonts/ClashDisplay-Light.ttf",
+      weight: "200",
+    },
+    {
+      path: "../public/fonts/ClashDisplay-Medium.ttf",
+      weight: "300",
+    },
+    {
+      path: "../public/fonts/ClashDisplay-Regular.ttf",
+      weight: "400",
+    },
+    {
+      path: "../public/fonts/ClashDisplay-Semibold.ttf",
+      weight: "500",
+    },
+  ],
 });
 
 export const metadata: Metadata = {

@@ -19,9 +19,9 @@ function Header() {
         </div>
         <div className="hidden ml-28  lg:flex lg:gap-10">
           <p className="font-bold">Home</p>
-          <p>About</p>
-          <p>Blog</p>
-          <p>Property</p>
+          <p className="text-slate-500 font-normal">About</p>
+          <p className="text-slate-500 font-normal">Blog</p>
+          <p className="text-slate-500 font-normal">Property</p>
         </div>
       </div>
       {/* Left Side  */}
