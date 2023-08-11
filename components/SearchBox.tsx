@@ -9,7 +9,7 @@ function SearchBox() {
   return (
     <section className="relative flex flex-col items-center justify-center my-16">
       <div className="bg-black w-full lg:pt-40 px-4 pb-28 pt-20 lg:pb-48 text-white rounded-xl flex items-center justify-center">
-        <div className="absolute lg:left-36 -top-12 lg:-top-32 flex lg:gap-10 items-center">
+        <div className="absolute lg:left-36 lg:-top-32 flex lg:gap-10 items-center">
           {/* Bulding Image  */}
           <div className="relative ml-2 lg:ml-0 max-w-[170px] lg:max-w-sm">
             <Image

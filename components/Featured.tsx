@@ -22,13 +22,7 @@ function Featured() {
 
       <div>
         <div>
-          <Swiper
-            spaceBetween={15}
-            slidesPerView={3}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
-            className="mt-8"
-          >
+          <Swiper spaceBetween={15} slidesPerView={3} className="mt-8">
             <SwiperSlide>
               <CarouselCard
                 src={Img1}

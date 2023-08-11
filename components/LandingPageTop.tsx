@@ -1,17 +1,26 @@
+"use client";
+
 import { FiArrowUpRight } from "react-icons/fi";
 import logo from "@/assets/logo.svg";
 import Image from "next/image";
 import building from "@/assets/building.svg";
 import buildingHorizontal from "@/assets/building-horizontal.svg";
+import { useRef, useEffect, useState } from "react";
 
 /* eslint-disable react/no-unescaped-entities */
 function LandingPageTop() {
+  const ref = useRef(null);
+  useEffect(() => {
+    setRefData(ref.current?.clientHeight);
+  }, [ref]);
+  const [refData, setRefData] = useState(680);
+  console.log(`${refData}px`);
   return (
     <>
       {/* Background Frame  */}
-      <div className="bg-black w-full  p-6  rounded-3xl flex flex-col items-center justify-center md:flex-row gap-5">
+      <div className="bg-black w-full  lg:p-6 p-3  rounded-3xl flex flex-col items-center justify-center md:flex-row lg:gap-5 gap-3">
         {/* Right Section  */}
-        <div className="flex flex-col md:w-3/5 gap-6 h-full w-full ">
+        <div ref={ref} className="flex flex-col md:w-3/5 gap-6 h-fit w-full">
           {/* Large Screen Top Section  */}
           <div className="relative h-full w-full bg-customSlate rounded-3xl p-4 lg:p-8 lg:py-16 flex flex-col items-center lg:items-start gap-8 md:flex-1">
             {/* open button  */}
@@ -66,7 +75,7 @@ function LandingPageTop() {
           <div className="h-full bg-black w-[30%] rounded-l-full" />
         </div> */}
         {/* Bottom Section  */}
-        <div className="w-full h-full relative flex items-center justify-center rounded-xl md:w-2/5 ">
+        <div className="w-full h-fit  relative flex items-center justify-center rounded-xl md:w-2/5">
           <Image
             src={building}
             alt=""
@@ -79,7 +88,7 @@ function LandingPageTop() {
             alt=""
             width={1000}
             height={1000}
-            className="w-full max-h-[700px] rounded-3xl hidden md:inline object-cover"
+            className={`w-full lg:max-h-[676px] md:max-h-[534px] rounded-3xl hidden md:inline object-cover`}
           />
         </div>
       </div>
